@@ -3,7 +3,7 @@
 array=(
     '\[[0-9]*\]/'
     Skywalker/Iunpwsd
-    Luke/Johh
+    Luke/John
     luke/john
     Jedi/Kunfu
     Anakin/Ulugbek
