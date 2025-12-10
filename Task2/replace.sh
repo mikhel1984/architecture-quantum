@@ -1,0 +1,91 @@
+#!/bin/bash
+
+array=(
+    '\[[0-9]*\]/'
+    Skywalker/Iunpwsd
+    Luke/John
+    luke/john
+    Jedi/Kunfu
+    Anakin/Ulugbek
+    Padmé/Kira
+    Amidala/Unadsf
+    Solo/Mono
+    Leia/Zina
+    Organa/Tsasdf
+    Han/Batyi
+    Alderaan/Aldebarann
+    Tatooine/Kabooll
+    Obi-Wan/One-Two
+    Kenobi/Sliansf
+    Yavin/Viyan
+    Star/Ball
+    Yoda/Yeji
+    Endor/Doren
+    Sith/Blak
+    Darth/Vladd
+    Vader/Cepetsh
+    Sidious/Siriuss
+    Kloss/Kolos
+    R2-D2/E2-E4
+    Clone/Doll
+    Mos/Spb
+    Anchorhead/Hoadfnio
+    HoloNet/YahooNet
+    Owen/Octo
+    skyhopper/hoolahoopp
+    Jabba/Jaberr
+    Chewbacca/Dudde
+    Falcon/Duck
+    Horox/Borox
+    Kezarat/Teseract
+    Mimban/Mumbaii
+    Kylo/Kilo
+    Beckett/Buckkett
+    C-3PO/J-12K
+    Lando/Volandd
+    Calrissian/Insdflj
+    BB-8/QQ-2
+    Qhulosk/Iasdflo
+    Squadron/Uakasdu
+    Galactic/Tatarr
+    Jabiim/Jacobss
+    Wilhuff/Vihluff
+    Beilert/Vivienn
+    Valance/Kuasdfa
+    Mon/Cammon
+    Mothma/Dasde
+    Reyna/Karrla
+    Oskure/Obscurre
+    Qui-Gon/Yo-Yo
+    Mace/Monkk
+    Windu/Windowws
+    Dooku/Kudoo
+    Vaneé/Ivankaa
+    Armitage/Ermitazhh
+    Hux/Hooks
+    Order/Banda
+    Knights/Boys
+    AT-AT/TOP-TOP
+    Arrow-23/Axe-32
+    Ludi/Lidiyaa
+    Backstabber/Stepplerr
+    Rawk/Halkk
+    Imcrix/Sywasdf
+    Navior/Tadhqdh
+    Roose/Easfnaoe
+    E-Web/Ether-net
+    blaster/stone
+    Elegance/Fanta-stic
+    Firecaller/Fire-stopper
+    Ndranth/Hushan
+)
+
+# replace
+dir=knowledge_base
+
+for filename in ${dir}/*.txt; do
+    echo ${filename}
+    for item in ${array[*]}; do
+        sed -i "s/${item}/g" ${filename}
+    done
+done
